@@ -63,7 +63,8 @@ Dependencies on kernel interfaces that can change between versions:
 | TLP 1.10.2 plugin, offline test with simulated sysfs (10..100, rejects 0/1/9/101 without writing) | tested |
 | TLP 1.10.2 detects the live driver and applies the stop threshold | tested |
 | Charger-connected test at 89%: saved 100% limit resumes charging (~1.54 A); 80% stops charging (0 mA) | tested |
-| Reboot and suspend/resume with replacement modules | **untested** |
+| One reboot on Kali 7.1.5 / MacBookPro12,1: custom modules and TLP adapter load automatically; 80% limit retained; AC connected at 89%, charging stopped (0 mA) | tested |
+| Suspend/resume with replacement modules | **untested** |
 
 Contributors and provenance:
 
