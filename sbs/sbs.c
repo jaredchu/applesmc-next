@@ -27,6 +27,7 @@
 #include <acpi/battery.h>
 
 #include "sbshc.h"
+#include "acpi/sbs.h"
 
 #define ACPI_SBS_CLASS			"sbs"
 #define ACPI_AC_CLASS			"ac_adapter"
