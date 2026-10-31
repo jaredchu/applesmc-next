@@ -64,7 +64,11 @@ Dependencies on kernel interfaces that can change between versions:
 | TLP 1.10.2 detects the live driver and applies the stop threshold | tested |
 | Charger-connected test at 89%: saved 100% limit resumes charging (~1.54 A); 80% stops charging (0 mA) | tested |
 | One reboot on Kali 7.1.5 / MacBookPro12,1: custom modules and TLP adapter load automatically; 80% limit retained; AC connected at 89%, charging stopped (0 mA) | tested |
-| Suspend/resume with replacement modules | **untested** |
+| One deep S3 cycle on Kali 7.1.5 / MacBookPro12,1: custom modules and 80% limit retained; Wi-Fi/SSH return with the host Wi-Fi D3cold workaround | tested |
+
+The S3 test used a separate, host-specific `d3cold_allowed=0` setting for the
+Broadcom BCM43602 Wi-Fi controller. Repeated/long sleep cycles and other kernels
+remain untested.
 
 Contributors and provenance:
 
